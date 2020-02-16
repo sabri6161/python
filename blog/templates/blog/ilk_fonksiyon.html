@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sabri'nin Günlüğü</title>
+    <style>
+    ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;}
+
+    li {float: left;}
+
+    li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+
+    li a:hover {background-color: #111;}
+   </style>
+</head>
+<body style="margin:0 ; padding:0">
+<div>
+    <h1 style="margin:0 ;color:black; background-color:orange; font-size:50px; padding:20px ; ">Sabri'nin Sitesine Hoşgeldiniz</h1>
+</div>
+
+<ul>
+  <li><a class="active" href="{% url 'blog:post_list' %}">Python Kurulum</a></li>
+  <li><a href="{% url 'blog:ilk_fonksiyon' %}">İlk Fonksiyon</a></li>
+</ul>
+
+<h1 style="font-size:37px;margin:50px;">İLK KOMUTUN</h1>
+<p style="font-size:20px">Şimdi ilk komutumuzu yazmak için Python'u açıyoruz. Arama bölümüne "IDLE" yazıyoruz ve açıyoruz.</p>
+<img style="margin:20px; width: 50%; height: 400px; padding-top: 10px;" src="{% static 'images/pythonaçma.jpg' %}" alt="My image">
+<p style="font-size:20px">İlk öğreneceğimiz komut "print" komutu. Print komutu istediğimiz bir şeyi yazdırmamıza yarıyor.
+Örnek olarak yazdırmak istediğimiz şeyi print("Sabri") şeklinde yazıyoruz.</p>
+<img style="margin:20px; width: 60%; height: 250px; padding-top: 10px;" src="{% static 'images/pythonprint.jpg' %}" alt="My image">
+
+</body>
+</html>
