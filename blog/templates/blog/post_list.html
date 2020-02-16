@@ -31,7 +31,7 @@
 <p style="font-size:20px">Exe ye tıklıyoruz ve gelen sayfada iki kutucuğu da tikliyoruz sonra İnstall Now diyoruz.</p>
 <img style="margin:20px; width: 50%; height: 370px; padding-top: 10px;" src="{% static 'images/pythonkurulum.jpg' %}" alt="My image">
 <h1 style="padding:30px ;color:red; margin:30px; font-size:25px;">İŞTE OLDU PYTHON'U KURDUN</h1>
-<button style="background-color:green; color:white ; margin-left:900px;" onclick="window.location.href='http://127.0.0.1:8000/ilk_fonksiyon'">Sıradaki Ders İçin Tıkla</button>
+<a style="text-decoration:none; border:2px solid black; background-color:green; color:white ; margin-left:900px;" href="{% url 'blog:ilk_fonksiyon' %}">Sıradaki Ders İçin Tıkla</a>
 
 </body>
 </html>
